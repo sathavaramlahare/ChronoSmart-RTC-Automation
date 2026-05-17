@@ -1,6 +1,6 @@
 #include<lpc21xx.h>
 #include"lcd.h"
-#include"keypad_defines.h"
+#include"keypad.h"
 //Lookup table used for row and column scanning
 int valLUT[4]={14,13,11,7};
 //Keypad layout mapping
