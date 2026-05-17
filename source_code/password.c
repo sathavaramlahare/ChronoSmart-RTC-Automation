@@ -1,6 +1,8 @@
-#include"Defines.h"
+#include"delay.h"
+#include"lcd.h"
 #include"keypad_defines.h"
 #include<string.h>
+#include"menu.h"
 char password[5]="2222";
 // Array to store entered password1
 char input[5];
