@@ -1,0 +1,22 @@
+//MENU FUNCTION DECLARATIONS
+void Change_password(void);
+int Menu(void);
+int check_password(void);
+void Settings_Menu(void);
+void Device_Menu(void);
+void time_edit(void);
+void date_edit(void);
+void day_edit(void);
+void Device1_edit(void);
+void Device2_edit(void);
+void view(void);
+void Device1(void);
+void Device2(void);
+void Date(void);
+void Time(void);
+void rtcday(void);
+void ontime1(void);
+void offtime1(void);
+void ontime2(void);
+void offtime2(void);	
+void temp_edit(void);
