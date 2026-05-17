@@ -1,7 +1,7 @@
-# ChronoSmart-RTC-Automation
+**ChronoSmart-RTC-Automation**
 ChronoSmart is an LPC2148-based embedded automation system designed for real-time device control using RTC scheduling, secure password authentication, LCD monitoring, keypad-driven configuration, temperature sensing through ADC, and automatic ON/OFF management for multiple devices.
 
-## Overview
+**Overview**
 
 ChronoSmart RTC Automation is an LPC2129-based embedded system project designed for intelligent device automation using Real-Time Clock (RTC) scheduling, temperature monitoring, and interrupt-driven control.
 
@@ -13,3 +13,21 @@ The system allows users to:
 - Protect settings using password authentication
 - Edit parameters only when an external interrupt is generated
 - Automatically disable device operation when temperature exceeds the threshold value for safety protection
+
+**Hardware Components**
+
+- LPC2148 Microcontroller
+- 16x2 LCD Display
+- 4x4 Matrix Keypad
+- LM35 Temperature Sensor
+- LED'S
+- Switch
+- USB-UART Converter
+
+
+**Software Used**
+
+- Embedded C
+- Keil uVision
+- Flash Magic
+
