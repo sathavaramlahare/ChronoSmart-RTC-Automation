@@ -1,7 +1,7 @@
 #include "defines.h"
 #include "menu.h"
 #include "lcd.h"
-#include "keypad_defines.h"
+#include "keypad.h"
 //Displays RTC viewing menu.Allows user to view Date, Time, and Day.
 void RTC(void)
 {
