@@ -1,5 +1,6 @@
 #include<lpc21xx.h>
-#include"Defines.h"
+#include"lcd.h"
+#include"delay.h"
 //LCD control pins
 #define RS 5
 #define RW 4
