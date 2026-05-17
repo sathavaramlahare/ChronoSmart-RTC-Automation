@@ -1,5 +1,5 @@
 #include<lpc21xx.h>
-#include "Defines.h"
+#include "interrupt.h"
 // External interrupt channel number for EINT0
 #define EINT0_CHNO 14
 // LED connected to indicate interrupt activity
