@@ -3,7 +3,7 @@ ChronoSmart is an LPC2148-based embedded automation system designed for real-tim
 
 **Overview**
 
-ChronoSmart RTC Automation is an LPC2129-based embedded system project designed for intelligent device automation using Real-Time Clock (RTC) scheduling, temperature monitoring, and interrupt-driven control.
+ChronoSmart RTC Automation is an LPC2148-based embedded system project designed for intelligent device automation using Real-Time Clock (RTC) scheduling, temperature monitoring, and interrupt-driven control.
 
 The system allows users to:
 - Set automatic ON/OFF timings for devices
