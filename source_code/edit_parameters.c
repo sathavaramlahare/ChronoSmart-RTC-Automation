@@ -1,5 +1,10 @@
-#include"Defines.h"
+#include"delay.h"
+#include"device.h"
+#include"menu.h"
+#include"lcd.h"
 #include"RTC.h"
+#include"keypad_defines.h"
+#include"defines.h"
 #include<string.h>
 // External array storing day names
 extern char Day[7][4];
