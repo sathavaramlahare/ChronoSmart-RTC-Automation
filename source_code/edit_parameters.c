@@ -3,7 +3,7 @@
 #include"menu.h"
 #include"lcd.h"
 #include"RTC.h"
-#include"keypad_defines.h"
+#include"keypad.h"
 #include"defines.h"
 #include<string.h>
 // External array storing day names
