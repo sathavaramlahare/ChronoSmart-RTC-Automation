@@ -1,8 +1,12 @@
 #include<lpc21xx.h>
 #include"Defines.h"
 #include"interrupt.h"
-#include "ADC_defines.h"
-
+#include"adc.h"
+#include"lcd.h"
+#include"rtc.h"
+#include"keypad_defines.h"
+#include"menu.h"
+void controldevices(void);
 //External Interrupt Channel number for EINT0
 #define EINT0_CHNO 14
 
@@ -13,7 +17,7 @@
 //RTC Time variables
 int hour,min,sec,date,month,year,current_time;
 unsigned int day;
-
+int flag = 0;
 char Day[7][4]={"sun","mon","tue","wed","thu","fri","sat"};
 
 //ADC variables
@@ -205,4 +209,4 @@ void controldevices()
         IOCLR1 = 1<<Device_2;
     }
 }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+
