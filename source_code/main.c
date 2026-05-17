@@ -4,7 +4,7 @@
 #include"adc.h"
 #include"lcd.h"
 #include"rtc.h"
-#include"keypad_defines.h"
+#include"keypad.h"
 #include"menu.h"
 void controldevices(void);
 //External Interrupt Channel number for EINT0
