@@ -1,5 +1,6 @@
 #include<lpc21xx.h>
-#include "Defines.h"
+#include "rtc.h"
+#include "lcd.h"
 //Oscillator frequency
 #define FOSC 12000000
 #define CCLK (5*FOSC)
