@@ -40,7 +40,6 @@ The system allows users to:
 | 4x4 Matrix Keypad Rows    | P1.16 – P1.19                   |
 | 4x4 Matrix Keypad Columns | P1.20 – P1.23                   |
 | LM35 Temperature Sensor   | AD0.1 (P0.28)                   |
-| RTC Module                | Internal RTC                    |
 | External Interrupt Switch | EINT0 (P0.1)                    |
 | Device 1 Output LED       | P1.24                           |
 | Device 2 Output LED       | P1.25                           |
