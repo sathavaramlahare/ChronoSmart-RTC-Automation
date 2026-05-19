@@ -31,6 +31,20 @@ The system allows users to:
 - Keil uVision
 - Flash Magic
 
+****Hardware Pin Configuration**
+
+| Module / Device           | LPC2148 Pins Used               |
+| ------------------------- | ------------------------------- |
+| LCD Control Pins          | P0.4 (RS), P0.5 (RW), P0.6 (EN) |
+| 16x2 LCD Data Pins        | P0.8 – P0.15                    |
+| 4x4 Matrix Keypad Rows    | P1.16 – P1.19                   |
+| 4x4 Matrix Keypad Columns | P1.20 – P1.23                   |
+| LM35 Temperature Sensor   | AD0.1 (P0.28)                   |
+| RTC Module                | Internal RTC                    |
+| External Interrupt Switch | EINT0 (P0.1)                    |
+| Device 1 Output LED       | P1.24                           |
+| Device 2 Output LED       | P1.25                           |
+
 ****Flow Chart**
 
 ```text
