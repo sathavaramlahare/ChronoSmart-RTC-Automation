@@ -129,6 +129,20 @@ The system allows users to:
                        │      REPEAT      │
                        └──────────────────┘
 ```
+**# Working Principle
+1. System initializes RTC, LCD, ADC, and keypad modules.
+2. RTC continuously updates current time, date, and day.
+3. LM35 sensor monitors surrounding temperature.
+4. Current status is displayed on 16x2 LCD.
+5. Devices are automatically controlled based on RTC schedules.
+6. If temperature exceeds threshold:
+   - Devices are turned OFF
+   - Interrupt access is disabled
+   - System enters protection mode
+7. User can edit settings only after:
+   - External interrupt generation
+   - Successful password authentication
+
 **# Applications**
 
 - Smart Home Automation
