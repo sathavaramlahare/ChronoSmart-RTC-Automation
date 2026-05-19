@@ -25,7 +25,7 @@ int dval;
 float ear;
 
 //Temperature threshold value
-int temp_threshold=60;
+int temp_threshold=40;
 
 //Device-1 ON and OFF timing values
 int on_hour1=10,on_min1=45,on_sec1=35;
