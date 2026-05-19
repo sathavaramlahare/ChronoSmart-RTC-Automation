@@ -82,6 +82,7 @@ int main()
 			{
 				temperature_recover();
 			}
+			continue;
     }
 
 	//Read current RTC time
@@ -146,6 +147,8 @@ int main()
 //Function to shutdown system during high temperature
 void temperature_shutdown()
 {
+	 if(system_lock==0)
+	 {
     // Disable interrupt
     VICIntEnClr = (1<<EINT0_CHNO);
 	  //clear interrupt flag
@@ -158,6 +161,7 @@ void temperature_shutdown()
     cmd_lcd(0x80);
     str_lcd("Temp exceeded!!!");
     system_lock = 1;   // lock system
+		 }
 }
 //Function to recover system after temperature recovery
 void temperature_recover()
@@ -167,6 +171,7 @@ void temperature_recover()
 
 	system_lock = 0;
 	cmd_lcd(0x01);
+	delay_ms(200);
 }
 //Function to control devices based on ON/OFF timing
 void controldevices()
