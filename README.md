@@ -32,18 +32,17 @@ The system allows users to:
 - Flash Magic
 
 ****Flow Chart**
-                           ┌─────────────────┐
-                           │      START      │
-                           └────────┬────────┘
+                           
+                                  START      
+                    
                                     │
                                     ▼
-                 ┌────────────────────────────────┐
-                 │ Initialize System Modules      │
-                 │ • RTC                          │
-                 │ • LCD                          │
-                 │ • ADC                          │
-                 │ • Keypad                       │
-                 └───────────────┬────────────────┘
+                  Initialize System Modules      
+                  • RTC                          
+                  • LCD                          
+                   • ADC                          
+                  • Keypad                      
+                 
                                  │
                                  ▼
                  ┌────────────────────────────────┐
