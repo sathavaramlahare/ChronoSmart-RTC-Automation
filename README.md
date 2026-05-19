@@ -143,8 +143,7 @@ The system allows users to:
    - External interrupt generation
    - Successful password authentication
 
-**# Applications**
-
+**Applications**
 - Smart Home Automation
 - Industrial Timer Control
 - Temperature Safety Systems
