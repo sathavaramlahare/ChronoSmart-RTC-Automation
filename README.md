@@ -32,7 +32,6 @@ The system allows users to:
 - Flash Magic
 
 ****Flow Chart**
-                           ## Flow Chart
 
 ```text
                    ┌─────────────────┐
