@@ -31,7 +31,7 @@ The system allows users to:
 - Keil uVision
 - Flash Magic
 
-****Hardware Pin Configuration**
+**Hardware Pin Configuration**
 
 | Module / Device           | LPC2148 Pins Used               |
 | ------------------------- | ------------------------------- |
@@ -44,7 +44,7 @@ The system allows users to:
 | Device 1 Output LED       | P1.24                           |
 | Device 2 Output LED       | P1.25                           |
 
-****Flow Chart**
+**Flow Chart**
 
 ```text
                    ┌─────────────────┐
