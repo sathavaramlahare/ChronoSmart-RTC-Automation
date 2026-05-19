@@ -33,16 +33,18 @@ The system allows users to:
 
 ****Flow Chart**
                            
-                                  START      
-                    
+                           ┌─────────────────┐
+                           │      START      │
+                           └────────┬────────┘
                                     │
                                     ▼
-                  Initialize System Modules      
-                  • RTC                          
-                  • LCD                          
-                   • ADC                          
-                  • Keypad                      
-                 
+                 ┌────────────────────────────────┐
+                 │ Initialize System Modules      │
+                 │ • RTC                          │
+                 │ • LCD                          │
+                 │ • ADC                          │
+                 │ • Keypad                       │
+                 └───────────────┬────────────────┘
                                  │
                                  ▼
                  ┌────────────────────────────────┐
@@ -112,3 +114,4 @@ The system allows users to:
                                ┌──────────────────┐
                                │      REPEAT      │
                                └──────────────────┘
+```
