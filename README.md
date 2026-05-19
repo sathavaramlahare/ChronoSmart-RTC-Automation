@@ -129,7 +129,7 @@ The system allows users to:
                        │      REPEAT      │
                        └──────────────────┘
 ```
-**# Working Principle
+**Working Principle**
 1. System initializes RTC, LCD, ADC, and keypad modules.
 2. RTC continuously updates current time, date, and day.
 3. LM35 sensor monitors surrounding temperature.
