@@ -31,3 +31,85 @@ The system allows users to:
 - Keil uVision
 - Flash Magic
 
+****Flow Chart**
+                           ┌─────────────────┐
+                           │      START      │
+                           └────────┬────────┘
+                                    │
+                                    ▼
+                 ┌────────────────────────────────┐
+                 │ Initialize System Modules      │
+                 │ • RTC                          │
+                 │ • LCD                          │
+                 │ • ADC                          │
+                 │ • Keypad                       │
+                 └───────────────┬────────────────┘
+                                 │
+                                 ▼
+                 ┌────────────────────────────────┐
+                 │ Continuously Read RTC          │
+                 │ • Time                         │
+                 │ • Date                         │
+                 │ • Day                          │
+                 └───────────────┬────────────────┘
+                                 │
+                                 ▼
+                 ┌────────────────────────────────┐
+                 │ Read Temperature from LM35     │
+                 └───────────────┬────────────────┘
+                                 │
+                                 ▼
+                 ┌────────────────────────────────┐
+                 │ Display on 16x2 LCD            │
+                 │ • Time                         │
+                 │ • Date                         │
+                 │ • Temperature                  │
+                 └───────────────┬────────────────┘
+                                 │
+                                 ▼
+                 ┌────────────────────────────────┐
+                 │ Is Temperature > Threshold ?   │
+                 └───────────┬───────────┬────────┘
+                             │ YES       │ NO
+                             ▼           ▼
+             ┌────────────────────────┐  ┌────────────────────────────┐
+             │ Disable Devices        │  │ Compare RTC Time with      │
+             │ for Safety Protection  │  │ Stored ON/OFF Schedules    │
+             └────────────┬───────────┘  └─────────────┬──────────────┘
+                          │                            │
+                          └────────────┬───────────────┘
+                                       │
+                                       ▼
+                     ┌────────────────────────────────┐
+                     │ Automatically Control Devices  │
+                     │ • Device ON                    │
+                     │ • Device OFF                   │
+                     └───────────────┬────────────────┘
+                                     │
+                                     ▼
+                     ┌────────────────────────────────┐
+                     │ Is External Interrupt Generated│
+                     │        by User Switch ?        │
+                     └───────────┬───────────┬────────┘
+                                 │ YES       │ NO
+                                 ▼           ▼
+                 ┌────────────────────────┐  ┌────────────────────────┐
+                 │ Ask for Password       │  │ Continue Monitoring    │
+                 │ Authentication         │  │ RTC and Temperature    │
+                 └────────────┬───────────┘  └────────────┬───────────┘
+                              │                           │
+                              ▼                           │
+                 ┌────────────────────────┐               │
+                 │ Open Settings Menu     │               │
+                 │ • Edit RTC Time        │               │
+                 │ • Edit Date/Day        │               │
+                 │ • Set Device Timings   │               │
+                 │ • Set Temperature      │               │
+                 └────────────┬───────────┘               │
+                              │                           │
+                              └────────────┬──────────────┘
+                                           │
+                                           ▼
+                               ┌──────────────────┐
+                               │      REPEAT      │
+                               └──────────────────┘
